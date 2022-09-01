@@ -25,11 +25,7 @@ You must have different numbers of each type of vehicle (like 4 cars, 2 trucks, 
 You must add the objects to the array list in jumbled order, not all cars together, then all trucks, etc. -- mix them up when adding them to the array list.
 Run the project 3 times, asking for each of the different types of vehicles, and take a screenshot of the result, like the examples above. Take screenshots of the code.
 
- 
-
 Submission:the specified screenshots and the root folder for the project
-
- 
 
 Pay careful attention to the rubric for this assignment.
 
