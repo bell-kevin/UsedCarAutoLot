@@ -45,39 +45,43 @@ public class UsedCarAutoLot {
             System.out.println(typeOfVehicle + vehicle.display());
         }); // for-each loop
         System.out.println("");
-        System.out.print("Are you interested in cars (C), trucks (T), or "
-                + "vans (V)?: ");
-        Scanner computerKeyboardInput = new Scanner(System.in);
-        String userInput = computerKeyboardInput.nextLine().toLowerCase();
-        if ("c".equals(userInput) || "t".equals(userInput)
-                || "v".equals(userInput)) {
-            vehicles.forEach((Vehicle x) -> {
-                String typeOfVehicle = userInput;
-                if (null != userInput) {
-                    switch (userInput) {
-                        case "c":
-                            if (x instanceof Car) {
-                                System.out.println("Car " + x.display());
-                            } // end if/else conditions
-                            break;
-                        case "t":
-                            if (x instanceof Truck) {
-                                System.out.println("Truck " + x.display());
-                            } // end if/else conditions
-                            break;
-                        // end if/else conditions
-                        case "v":
-                            if (x instanceof Van) {
-                                System.out.println("Van " + x.display());
-                            } // end if/else conditions
-                            break;
-                        default:
-                            break;
-                    } // end if/else conditions
-                }
-            }); // end for-each loop
-        } else {
-            System.out.println("bad input, try again");
-        } // end if statement
+        boolean inputValid = false;
+        String userInput = "";
+        do {
+            System.out.print("Are you interested in cars (C), trucks (T), or "
+                    + "vans (V)?: ");
+            Scanner computerKeyboardInput = new Scanner(System.in);
+            userInput = computerKeyboardInput.nextLine().toLowerCase();
+            if ("c".equals(userInput) || "t".equals(userInput)
+                    || "v".equals(userInput)) {
+                inputValid = true;
+            } else {
+                System.out.println("bad input, try again");
+            } // end if/else statement
+        } while (!inputValid); // end while loop   
+        for (Vehicle x : vehicles) {
+            if (null != userInput) {
+                switch (userInput) {
+                    case "c":
+                        if (x instanceof Car) {
+                            System.out.println("Car " + x.display());
+                        } // end if/else conditions
+                        break;
+                    case "t":
+                        if (x instanceof Truck) {
+                            System.out.println("Truck " + x.display());
+                        } // end if/else conditions
+                        break;
+                    // end if/else conditions
+                    case "v":
+                        if (x instanceof Van) {
+                            System.out.println("Van " + x.display());
+                        } // end if/else conditions
+                        break;
+                    default:
+                        break;
+                } // end if/else conditions
+            } // end if/else conditions
+        } // end for-each loop
     } // end main method
 } // end UsedCarAutoLot class
