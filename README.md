@@ -40,6 +40,8 @@ Notes:
 
 Run the project 3 times, asking for each of the different types of vehicles, and take a screenshot of the result, like the examples above. Take screenshots of the code.
 
+![bonusLoop](https://github.com/bell-kevin/UsedCarAutoLot/blob/main/bonusLoop.PNG)
+
 Submission:the specified screenshots and the root folder for the project
 
 Pay careful attention to the rubric for this assignment.
