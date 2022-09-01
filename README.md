@@ -1,6 +1,7 @@
 # UsedCarAutoLot
 
 Chapter 14 Example Project
+Davis Technical College
 
 In this project, simulate a used car auto lot. There are 3 types of vehicles – cars, trucks, and another one that you choose. For these instructions, that choice is a Minivan – you may use that or select another type of vehicle. The output from this project will first list all of the inventory, then ask the user what type of car they are interested. It will display all of the vehicles that match the user's choice.
 
