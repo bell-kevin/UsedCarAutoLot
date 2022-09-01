@@ -33,5 +33,8 @@ public class UsedCarAutoLot {
         vehicles.add(new Van(71715, 2014, "white", "Honda", "Odyssey", 100000, 
                 2, true));
         //Use a For-Each loop to go through the Array List and display vehicles
+        for(Vehicle item : vehicles){
+            String item = "";
+        }
     } // end main method
 } // end UsedCarAutoLot class
