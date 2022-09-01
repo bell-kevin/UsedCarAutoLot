@@ -1,4 +1,7 @@
 # UsedCarAutoLot
+
+Chapter 14 Example Project
+
 In this project, simulate a used car auto lot. There are 3 types of vehicles – cars, trucks, and another one that you choose. For these instructions, that choice is a Minivan – you may use that or select another type of vehicle. The output from this project will first list all of the inventory, then ask the user what type of car they are interested. It will display all of the vehicles that match the user's choice.
 
 Notice the similarities between the types of vehicles. All have an inventory number, like 12345, a year, make, model, color, and mileage. Then there are differences. All cars have number of doors and whether or not they have tinted windows. All trucks have bed length and whether or not they have a bed liner. All minivans have number of sliding doors and whether or not they have an entertainment center.
