@@ -59,8 +59,7 @@ public class UsedCarAutoLot {
                 System.out.println("bad input, try again");
             } // end if/else statement
         } while (!inputValid); // end while loop   
-        for (Iterator<Vehicle> it = vehicles.iterator(); it.hasNext();) {
-            Vehicle automobile = it.next();
+        for (Vehicle automobile : vehicles) {
             switch (userInput) {
                 case "c":
                     if (automobile instanceof Car) {
