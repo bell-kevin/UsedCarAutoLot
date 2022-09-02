@@ -60,27 +60,25 @@ public class UsedCarAutoLot {
             } // end if/else statement
         } while (!inputValid); // end while loop   
         for (Vehicle automobile : vehicles) {
-            if (null != userInput) {
-                switch (userInput) {
-                    case "c":
-                        if (automobile instanceof Car) {
-                            System.out.println("Car " + automobile.display());
-                        } // end if/else conditions
-                        break;
-                    case "t":
-                        if (automobile instanceof Truck) {
-                            System.out.println("Truck " + automobile.display());
-                        } // end if/else conditions
-                        break;
-                    // end if/else conditions
-                    case "v":
-                        if (automobile instanceof Van) {
-                            System.out.println("Van " + automobile.display());
-                        } // end if/else conditions
-                        break;
-                    default:
-                        break;
-                } // end if/else conditions
+            switch (userInput) {
+                case "c":
+                    if (automobile instanceof Car) {
+                        System.out.println("Car " + automobile.display());
+                    } // end if/else conditions
+                    break;
+                case "t":
+                    if (automobile instanceof Truck) {
+                        System.out.println("Truck " + automobile.display());
+                    } // end if/else conditions
+                    break;
+                // end if/else conditions
+                case "v":
+                    if (automobile instanceof Van) {
+                        System.out.println("Van " + automobile.display());
+                    } // end if/else conditions
+                    break;
+                default:
+                    break;
             } // end if/else conditions
         } // end for-each loop
     } // end main method
